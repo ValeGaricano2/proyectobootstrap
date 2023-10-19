@@ -1,0 +1,75 @@
+.text-carousel {
+    font-size: 24px;
+    text-align: center;
+}
+
+#opciones-menu{
+    display: none;
+}
+
+#lista-clon li{
+    list-style: none;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.clon{
+    color: rgba(0, 0, 0, 0.548);
+}
+
+#serch-barra{
+    display: none;
+}
+
+#submenu2 {
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    position: absolute;
+    top: 100%; /* Alinear el submenú debajo del enlace "Opciones" */
+    left: 40%; /* Centra el submenú horizontalmente */
+    transform: translateX(-35%); /* Ajusta la posición para centrarlo y hacerlo más ancho */
+    width: 70%; /* Establece el ancho al 70% de la pantalla */
+    display: none; /* Ocultar el submenú por defecto */
+}
+
+#submenu2 li {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+#submenu2 li a {
+    color: gray;
+    display: block;
+    padding: 5px 0;
+}
+.text-columns {
+    column-count: 3;
+    column-gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Media Query para dos columnas en pantallas medianas */
+@media (max-width: 768px) {
+    .text-columns {
+        column-count: 2;
+    }
+}
+
+/* Media Query para una columna en pantallas pequeñas */
+@media (max-width: 576px) {
+    .text-columns {
+        column-count: 1;
+        width: 95%;
+    }
+}
